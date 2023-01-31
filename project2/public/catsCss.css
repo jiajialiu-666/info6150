@@ -1,0 +1,308 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+    
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif; 
+}
+    
+#root {
+    background-color:papayawhip;
+}
+
+
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-area: header;
+    background-color:burlywood;
+}
+
+
+.header__logo {
+    grid-column: span 2;
+    aspect-ratio: 1/1;
+    height: 100px;
+    width: 100px;
+    
+}
+
+.header__tittle {
+    grid-column: span 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.navbar {
+    list-style: none;
+    padding: 1rem;
+    
+}
+
+.hidden {
+    width: 120px;
+    position: absolute;
+    list-style: none;
+    background-color: papayawhip;
+    max-height: 0;
+    overflow: hidden;
+}
+
+
+.home,
+.famous__cats,
+.cat__events {
+    width: 120px;
+    border: 1px solid papayawhip;
+    text-align: center;
+}
+
+.topic {
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: papayawhip;
+}
+
+.navbar:hover .active,
+.navbar:focus-within .active {
+    max-height: inherit;
+}
+
+.hidden .home:hover,
+.hidden .famous__cats:hover,
+.hidden .cat__events:hover {
+    background-color:red;
+}
+
+.register__confirm__input,
+.register__email__input {
+    width: 400px;
+}
+
+.register_email_error,
+.register_confirm_error {
+    color: red;
+}
+
+
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    grid-column: span 4;
+    background-color:burlywood;
+    justify-content: space-evenly;
+    
+}
+
+.navbar-links li {
+    display: none;
+}
+
+
+.navbar-links li a {
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+
+.navbar-links li :hover {
+    border: none;
+    background-color: inherit;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: inherit;
+
+}
+
+
+.main {
+    display: flex;
+    grid-column: span 10;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem;
+}
+.main__tittle {
+    display: flex;
+    grid-column: span 10;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.main__card {
+    display: grid;
+    grid-column: span 12;
+    gap:0.5rem
+}
+
+.card {
+    grid-column: span 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color:burlywood;
+    border: 1px solid#eee;  
+}
+
+.card:hover {
+    box-shadow: 2px 2px 5px 5px black;
+}
+
+.card__tittle {
+    text-align: center;
+}
+
+.card__pic {
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    height: 200px;
+    width: 200px;
+}
+
+.card__text {
+    margin: 2rem;
+}
+
+.card__cta {
+    display: inline-block;
+    
+    text-decoration: none;
+}
+
+
+
+
+.skip-to-content-link {
+    left: 50%;
+    position: absolute;
+    transform: translateY(-100%);
+  }
+
+  .skip-to-content-link {
+    background: #e77e23;
+    height: 30px;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+  }
+  
+  .skip-to-content-link:focus {
+    transform: translateY(0%);
+  }
+
+
+  .open {
+    border:none;
+    background-color: inherit;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.submit {
+
+    border-radius: 1rem;
+    background-color: lime;
+}
+
+.close {
+
+    border-radius: 1rem;
+    background-color: red;
+}
+
+.register__email,
+.register__confirm {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.footer__item {
+    list-style: none;
+    width: 100%;
+    flex-direction:column;
+}
+
+
+
+
+@media screen and (min-width:44rem){
+
+    .navbar {
+        display: none;
+    }
+
+    .main__card {
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        gap:2rem;
+    }
+
+    .card {
+        grid-column: span 4;
+    }
+
+    .navbar-links li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footer__menu {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 0.5rem;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    } 
+    
+    .footer__item {
+        grid-column: span 4;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    
+    footer {
+    
+        grid-area: footer;
+        background-color: burlywood ;
+        padding: 0.5rem;
+        font-size: small;
+    }
+
+     
+}
