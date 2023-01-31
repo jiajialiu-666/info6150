@@ -1,0 +1,38 @@
+.header {
+    display: grid;
+    grid-template-areas: 
+    "header-logo header-tittle"
+    "header-nav header-nav";
+
+    grid-template-columns: auto 1fr;
+    height: 350px;
+    border: solid;
+    border-width: 0 0 0,8rem 0;
+    border-color: rgb(137, 81, 216);
+    margin-bottom: 2rem;
+    
+    
+}
+.header__logo {
+    grid-area: header-logo;
+    width:60%;
+    height: 60%;
+}
+.header__tittle {
+    grid-area: header-tittle;
+    text-align:justify;
+}
+
+.header__theme-switcher {
+    grid-area: theme-switcher;
+}
+
+.header__nav {
+    grid-area: header-nav;
+    
+}
+header {
+    margin: 0;
+    padding: 0;
+   
+}

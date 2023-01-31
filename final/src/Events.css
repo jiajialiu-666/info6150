@@ -1,0 +1,70 @@
+.txt_pic1 {
+    
+    aspect-ratio: 1/1;
+    width:30%;
+    height: 40%;
+    border-radius: 1rem;
+    grid-column: span 2;
+    aspect-ratio: 1/1;
+    position: absolute;
+    left: 0;
+    
+}
+.txt_pic2 {
+    
+    aspect-ratio: 1/1;
+    width:30%;
+    height: 40%;
+    border-radius: 1rem;
+    grid-column: span 2;
+    aspect-ratio: 1/1;
+    position: absolute;
+    left: 0;
+
+}
+
+
+
+.main__text {
+    display: grid;
+    grid-column: span 12; 
+    gap:0rem;
+    
+    line-height: 3cm;
+}
+
+.text__title {
+   text-align:center;
+   
+}
+.text__title2 {
+    margin-left: 20rem;
+}
+.text__title3 {
+    font-size: 1.3rem;
+}
+.text__title4 {
+    margin-left: 20rem;
+}
+.text__title5 {
+    font-size: 1.5rem;
+}
+
+
+.events_text{
+    display: flex;
+    flex-direction: column;
+    height:500px;
+    border: 1px solid #9797e5;
+   
+    align-items: center;
+}
+
+
+.text1 {
+    margin: 5rem;
+    
+    
+}
+
+

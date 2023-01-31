@@ -1,0 +1,65 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #CCCCFF;
+    
+}
+
+
+.register {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    line-height: 2;
+    height: 800px;
+}
+
+
+select {
+    width: 150px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.register__name,
+.register__email {     
+    height: 100px;
+
+}
+.register__phone {
+    height: 100px;
+    margin-right: 700px;
+    margin-top: 60px;
+}
+
+
+.register__name__input {
+    width: 300px;
+}
+.register__email__input{
+    width: 300px;
+}
+.register__phone__input {
+    width: 300px;
+}
+
+.register__submit {
+    margin: 2rem;
+    width: 100px;
+}
+
+
+
+@media screen and (max-width:40rem){
+    .register__name,
+    .register__email,
+    .register__phone {
+        display: flex;
+        flex-direction: column;
+    }
+}

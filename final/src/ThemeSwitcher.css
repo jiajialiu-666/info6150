@@ -1,0 +1,28 @@
+
+.theme-switcher__toggle {
+    padding: 4px;
+    min-width: 5ch;
+    display: flex;
+    border-radius: 10rem;
+    
+    border:  1px solid purple;
+    background-color: #9797e5;
+
+    font:inherit;
+    font-size: 1.2rem;
+   
+}
+.theme-switcher__switch {
+    order: 2;
+    display: inline-block;
+    width: 1.5ch;
+    height: 1.5ch;
+    border-radius: 100%;
+    border:1px solid purple;
+
+    background-color:white;
+}
+
+.app.dark .theme-switcher__switch {
+    order: 2;
+}
