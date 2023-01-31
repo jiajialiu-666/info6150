@@ -1,0 +1,107 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(240, 227, 184);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
+
+.header__tittle {
+    grid-column: span 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+}
+
+
+.register {
+    border: 1px solid black;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    line-height: 2;
+    height: 500px;
+}
+
+.register__name_error,
+.register__email_error,
+.register__confirm_error {
+    display: none;
+    color: rgb(225, 125, 130);
+}
+
+.register__name__invalid .register__name_error,
+.register__email__invalid .register__email_error,
+.register__confirm__invalid .register__confirm_error {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__item {
+    list-style: none;
+}
+
+select {
+    width: 150px;
+}
+
+.register__name,
+.register__email {     
+    height: 100px;
+
+}
+.register__confirm {
+    height: 100px;
+    margin-left: -70px;
+}
+
+
+.register__name__input {
+    width: 300px;
+}
+.register__email__input{
+    width: 300px;
+}
+.register__confirm__input {
+    width: 300px;
+}
+
+.register__submit {
+    margin: 2rem;
+    width: 100px;
+}
+
+.footer__menu {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+} 
+
+.footer__item {
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:40rem){
+    .register__name,
+    .register__email,
+    .register__confirm {
+        display: flex;
+        flex-direction: column;
+    }
+}
