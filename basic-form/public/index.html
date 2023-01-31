@@ -1,0 +1,60 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="new.css">
+        </head>
+            <body>
+    <div id="root">
+        <header class="header">
+            <img class="header__logo" src="http://placekitten.com/500/500" alt="random cat">
+
+            <h1 class="header__tittle">Register Information!</h1>
+        </header>
+        <main class="main">
+            <form action="/submit" method="POST">
+                <div class="submain">
+                    <label for="name">Name:</label>
+                    <input name="name" id="name" placeholder="Required" required>
+               </div>
+                <div class="submain"> 
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Required" required>
+                </div>
+                <div class="menu">
+                    <select name="tier" required>
+                        <option value="0">Please select</option>
+                        <option value="1">Sliver Tier</option> 
+                        <option value="2">Gold Tier</option>
+                        <option value="3">Platinum Tier</option>
+                    </select>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="annoy_me" id="spam" checked/>
+                    <label for="spam">Do you want us to send you annoying emails?</label>
+                </div>
+                 <button type="submit">Register</button>
+            </form>
+        </main>
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul class="footer__menu">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Relevant Information</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Customer Service</a>
+                    </li>
+        </footer>
+    </div>
+</body>
+</html>
+           
+
+            
