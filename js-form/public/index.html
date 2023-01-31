@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div id="root">
+        <header class="header">
+            
+            <h1 class="header__tittle">Register Information!</h1>
+        </header>
+            <form class="register" action="/register" method="POST">
+                <div class="register__name">
+                    <label for="name">Name:</label>
+                    <input name="name" class="register__name__input" placeholder="Required">
+                    <span class="register__name_error">
+                        This field is required!
+                    </span>
+                </div>
+                <div class="register__email">
+                    <label for="name">Email:</label>
+                    <input name="email" class="register__email__input" placeholder="Required">
+                    <span class="register__email_error">
+                        This field is required!
+                    </span>
+                </div>
+                <div class="register__confirm">
+                    <label for="name">Confirm Email:</label>
+                    <input name="confirm" class="register__confirm__input" placeholder="Required">
+                    <span class="register__confirm_error">
+                        This field must match the email form!
+                    </span> 
+                </div>
+                <div class="menu">
+                    <select name="tier" required>
+                        <option value="0">Please select</option>
+                        <option value="1">NORMAL</option> 
+                        <option value="2">VIP</option>
+                        <option value="3">VVIP</option>
+                    </select>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="wants-spam" id="spam" checked/>
+                    <label for="spam">Do you want us to send you the latest notice?</label>
+                </div>
+                 <button type="submit" class="register__submit">Register!</button>
+            </form>
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul class="footer__menu">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Suggestions</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">Customer Service</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#">About Us</a>
+                    </li>
+        </footer>
+    </div>
+</body>
+</html>
