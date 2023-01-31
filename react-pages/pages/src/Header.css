@@ -1,0 +1,21 @@
+.header {
+    display: grid;
+    grid-template-areas: 
+    "header-logo header-tittle"
+    "header-nav header-nav";
+
+    grid-template-columns: auto 1fr;
+    
+    background-color: blanchedalmond;
+}
+.header__logo {
+    grid-area: header-logo;
+}
+.header__tittle {
+    grid-area: header-tittle;
+    text-align: center;
+}
+.header__nav {
+    grid-area: header-nav;
+    background-color: rgb(247, 225, 138);
+}
