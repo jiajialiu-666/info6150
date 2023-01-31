@@ -1,0 +1,125 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#root {
+    background-color: rgb(251, 187, 109);
+}
+
+li {
+    list-style: none;
+}
+
+select {
+    width: 150px;
+}
+
+
+
+.header__logo {
+    grid-column: span 2;
+    width: 15%;
+    aspect-ratio: 1/1;
+}
+
+.header__tittle {
+    grid-column: span 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.global__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+
+.global__menu ul {
+    position: absolute;
+    padding: 0 0.5rem;
+    margin: 0;
+    list-style: none;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.global__menu ul li {
+    padding: 0.5rem;
+    list-style: none;
+}
+
+.global__menu li:hover ul,
+.global__menu li:focus-within ul {
+    max-height: initial;
+}
+
+.global__menu button {
+    border: none;
+    background-color: inherit;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+form {
+    border: 1px solid black;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    line-height: 2;
+    height: 300px;
+}
+
+.main {
+    border-top: 200px;
+    height: 500px;
+    
+}
+
+
+.submain {
+    height: 60px;
+}
+
+.submain input {
+    width: 200px;
+}
+
+.footer__menu {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    list-style: none;
+} 
+
+.footer__item {
+    grid-column: span 4;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    width: 100px;
+}
+
+@media screen and (max-width:30rem){
+    .submain{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
